@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Desafio 02</title>
+</head>
+
+<body>
+  <!-- MENU NAVEGAÇÃO -->
+  <nav id="principal">
+    <div id="menuSuperior">
+      <h1>DncWeather</h1>
+    </div>
+    <div>
+      <ul>
+        <li>Endereços</li>
+        <li>Previsão do tempo</li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>
+      Descubra Mais com Precisão: <br />
+      Previsões do Tempo e endereços <br />
+      em tempo real.
+    </h1>
+    <img src="imagens/img-previsao-tempo.svg" width="175" alt="Error!" />
+  </header>
+
+  <!-- SEÇÃO FORMULÁRIO -->
+  <form id="sectionForm" onsubmit="submitForm(event)">
+    <div id="forms">
+      <div class="formCep">
+        <label>Primeiro Nome:</label>
+        <input type="name" required placeholder="Insira seu primeiro nome" id="nome" />
+      </div>
+      <div class="formCep">
+        <label>E-mail:</label>
+        <input type="email" required placeholder="Insira seu e-mail" id="e-mail" />
+      </div>
+      <div class="formCep">
+        <label>Digite o CEP:</label>
+        <input type="text" required placeholder="Insira o CEP" id="cep" />
+      </div>
+      <div class="formPrevisao">
+        <label>Digite a latitude e longitude para saber a previsão:</label>
+        <div>
+          <input type="text" required placeholder="Latitude" id="latitude" />
+          <input type="text" required placeholder="Longitude" id="longitude" />
+        </div>
+        <div>
+          <button id="acessar" type="submit">Acessar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- SEÇÃO CEP -->
+  <div id="sectionCep">
+    <div id="tituloCep">
+      <div>
+        <h1>Resultado da busca por CEP:</h1>
+      </div>
+      <div>
+        <img src="imagens/img-localizaçao.svg" width="100" alt="Error!" />
+      </div>
+    </div>
+    <div id="informacaoCep">
+      <div class="cep">
+        <p>Logradouro/Nome</p>
+      </div>
+      <div class="cep">
+        <p>Bairro/Distrito</p>
+      </div>
+      <div class="cep">
+        <p>Localidade/UF</p>
+      </div>
+    </div>
+    <div id="requisicaoCep">
+      <div id="rua" class="resCep"></div>
+      <div id="bairro" class="resCep"></div>
+      <div id="cidade" class="resCep"></div>
+    </div>
+  </div>
+  <!-- SEÇÃO PREVISÃO DO TEMPO -->
+  <div id="sectionTempo">
+    <div id="tituloTempo">
+      <div>
+        <h1>Previsão do tempo na região:</h1>
+      </div>
+      <div>
+        <img src="imagens/img-previsao-tempo-regiao.svg" width="125" alt="" />
+      </div>
+    </div>
+    <div id="informacaoPrevisao">
+      <div class="prevTempo" id="requisicaoTempo">
+        <p>Previsão de tempo de acordo com a região:</p>
+      </div>
+      <div class="prevTempo" id="previsao"></div>
+    </div>
+  </div>
+  <!-- SEÇÃO RODAPÉ -->
+  <footer>
+    <div>
+      <a href="">Termos de Uso</a>
+      <a href="">Política de Privacidade</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

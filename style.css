@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: inter;
+    background-color: #F2F2F2;
+}
+
+/* MENU NAVEGAÇÃO */
+#principal {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0C70F2;
+}
+#principal h1{
+    color: #FFFFFF;
+    font-weight: 800;
+    margin: 15px 0px 10px 50px;
+    font-size: 30px;
+}
+#principal ul {
+    list-style-type: none;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 5px 40px 0px 0px;
+    font-size: 20px;
+}
+#principal li {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* CABEÇALHO */
+header {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+header h1 {
+    margin: auto;
+}
+header img {
+    margin-bottom: 50px;
+}
+
+/* SEÇÃO FORMULÁRIO */
+#sectionForm {
+   background-color: #FFFFFF;
+   width: 50vw;
+   margin: auto;
+   border-radius: 30px;
+   margin-bottom: 200px;
+}
+#forms {
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    padding: 100px 0px 50px 0px;
+}
+#forms input {
+    background-color: #F2F2F2;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 15px;
+}
+#forms label {
+    margin-left: 10px;
+}
+.formCep {
+    display: flex;
+    flex-direction: column;
+}
+.formPrevisao input {
+    width: 161px;
+}
+input::placeholder {
+    color: #39393980;
+}
+#forms button {
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    width: 380px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+    margin-left: 10px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+}
+#forms button:hover {
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
+
+/* SEÇÃO CEP */
+}
+#tituloCep {
+    display: flex;
+    flex-direction:initial;
+    margin-left: 20vw;
+    align-items: center;
+}
+#tituloCep h1 {
+    margin: 0px 30px 0px 20px;
+}
+#informacaoCep {
+    display: flex;
+    justify-content: baseline;
+    background-color: #0C70F2;
+    width: 60vw;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+    color: #FFFFFF;
+    font-weight: 600;
+    height: 50px;
+    margin-top: 20px;
+}
+.cep {
+    margin: auto;
+}
+#requisicaoCep {
+    display: flex;
+    justify-content: baseline;
+    background-color: #FFFFFF;
+    width: 60vw;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 150px;
+    height: 50px;
+}
+.resCep {
+    margin: auto;
+}
+
+/* SEÇÃO PREVISÃO DO TEMPO */
+#tituloTempo {
+    display: flex;
+    flex-direction:initial;
+    margin-left: 20vw;
+    align-items: center;
+}
+#tituloTempo h1 {
+    margin: 0px 30px 0px 20px;
+}
+#informacaoPrevisao {
+    width: 60vw;
+    height: 50px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 150px;
+    margin-top: 20px;
+}
+#requisicaoTempo {
+    width: 65%;
+    text-align:right;
+}
+#previsao {
+    margin-left: 5px;
+}
+.prevTempo {
+    margin-top: 15px;
+}
+
+/* SEÇÃO RODAPÉ */
+footer {
+    height: 60px;
+    background-color: #0C70F2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer a {
+    color: #FFFFFF;
+    padding-right: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+footer a:first-child {
+    border-right: 3px solid white;
+}
+footer a:last-child {
+    margin-right: 20px;
+}   
+        
+
+   
